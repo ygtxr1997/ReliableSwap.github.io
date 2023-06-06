@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="ReliableSwap: Boosting General Face Swapping Via Reliable Supervision">
+  <meta name="twitter:description" content="ReliableSwap: Boosting General Face Swapping Via Reliable Supervision">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>ReliableSwap: Boosting General Face Swapping Via Reliable Supervision</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+	    tex2jax: {
+	        inlineMath: [['$','$'], ['\\(','\\)']],
+	        processEscapes: true
+	    }
+	});
+    </script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="xtitle is-1 publication-title">ReliableSwap: Boosting General Face Swapping Via Reliable Supervision</h1>
+            <br>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://ygtxr1997.github.io/" target="_blank">Ge Yuan</a><sup>1,2,+</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=ym_t6QYAAAAJ&hl=zh-CN&oi=sra" target="_blank">Maomao Li</a><sup>2,+</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://yzhang2016.github.io" target="_blank">Yong Zhang</a><sup>2,*</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=CCUQi50AAAAJ&hl=de" target="_blank">Huicheng Zheng</a><sup>1,*</sup>
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+              <sup>1</sup> Sun Yat-sen University &nbsp;&nbsp;&nbsp;
+              <sup>2</sup> Tencent AI Lab
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">(
+              <sup>+</sup>: Equal Contributions &nbsp;&nbsp;&nbsp;
+              <sup>*</sup>: Corresponding Authors
+              )</span>
+            </div>
+
+              </span>
+                  
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/xxxx.xxxx" target="_blank"
+                        class="external-link ">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/ygtxr1997/ReliableSwap" target="_blank"
+                  class="external-link ">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Demo link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/spaces/ygtxr1997/ReliableSwap_Demo" target="_blank"
+                  class="external-link ">
+                    <span class="icon">
+                      <i class="fab fa-safari"></i>
+                    </span>
+                    <span>Demo</span>
+                  </a>
+                </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+<div class="marquee-wrapper">
+	<div class="container">
+		<div class="marquee-block">
+			<div class="marquee-inner to-left">
+				<span>
+					<div class="marquee-item">
+            <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+						<p class="text-white">1</p>
+					</div>
+					<div class="marquee-item">
+            <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+						<p class="text-white">2</p>
+					</div>
+					<div class="marquee-item">
+            <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+						<p class="text-white">3</p>
+					</div>
+					<div class="marquee-item">
+            <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+						<p class="text-white">4</p>
+					</div>
+					<div class="marquee-item">
+            <img src="static/images/carousel5.jpg" alt="MY ALT TEXT"/>
+						<p class="text-white">5</p>
+					</div>
+				</span>
+				<span>
+					<div class="marquee-item">
+            <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+						<p class="text-white">1</p>
+					</div>
+					<div class="marquee-item">
+            <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+						<p class="text-white">2</p>
+					</div>
+					<div class="marquee-item">
+            <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+						<p class="text-white">3</p>
+					</div>
+					<div class="marquee-item">
+            <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+						<p class="text-white">4</p>
+					</div>
+					<div class="marquee-item">
+            <img src="static/images/carousel5.jpg" alt="MY ALT TEXT"/>
+						<p class="text-white">5</p>
+					</div>
+				</span>
+			</div>
+		</div>
+
+  </div>
+</section> -->
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <p style="font-weight: 600; text-align: center; padding-bottom: 10px;">TL;DR: A general face swapping framework that:</p> 
+      <p class="has-text-centered" style="padding-bottom: 10px;">
+        ✅ solves no-guidance problems <br>
+        ✅ enhances source identity preservation <br>
+        ✅ is orthogonal and compatiable with existing methods <br><br>
+      </p>
+      <img src="static/images/fr_weakness.png" alt="MY ALT TEXT" style="width:800px;"/>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+<!-- Paper abstract -->
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End paper abstract -->
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">What Problems We Solve</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="item">
+            <img src="static/images/typical_pipeline.png" style="width:80%; "alt="MY ALT TEXT"/>
+            <p> During face swapping training, the re-construction task (used when $X_{\rm{t}}=X_{\rm{s}}$) cannot be used as the proxy anymore when $X_{\rm{t}} \neq X_{\rm{s}}$, lacking pixel-wise supervison $\Gamma$.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Figures -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Method</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="item">
+            <img src="static/images/triplet_overall.png" style="width:100%; " alt="MY ALT TEXT"/>
+            <p> We first use real images $C_{\rm{a}}$ and $C_{\rm{b}}$ to synthesize fake images $C_{\rm{ab}}$ and $C_{\rm{ba}}$.
+              This synthesizing stage preserves the <b>true source identity and target attributes</b> based on Face Reenactment, Multi-Band Blending, and Face Reshaping.</p>
+          </div><br>
+          <div id="results" class="results" style="text-align: center;">
+            <div><div class="item" style="display: inline-block;">
+              <!-- Your image here -->
+              <img style="width:500px; " src="static/images/Table2.png" alt="MY ALT TEXT"/>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="item" style="display: inline-block;">
+              <img style="width:500px; " src="static/images/cycle.png" alt="MY ALT TEXT"/>
+            </div>
+            <p>
+              Then based on the <b>cycle relationship</b>, for face swapping training stage, we use <i>fake</i> images as inputs while <i>real</i> images as pixel-level supervisons $\Gamma$, keeping the output domain close to the <i>real</i> and natural distribution and solving the non-supervision issue.
+              In this way, the trainable face swapping network is guided to generate <b>source identity-consistency</b> swapping results, while also keeping <b>target attributes</b>.
+            </p>
+          </div>
+          <div class="item">
+            <img src="static/images/triplet_shape.png" style="width:70%; " alt="MY ALT TEXT"/>
+            <p>Segmentation-based dropping and inpainting in the Reshaping step.</p>
+          </div>
+          <div class="item">
+            <img src="static/images/fixernet.png" style="width:60%; " alt="MY ALT TEXT"/>
+            <p>Training stage of the proposed FixerNet. Lower face can be enhanced by $v_{\rm{full}}=[v_{\rm{id}};v_{\rm{fix}}]$.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- End image carousel -->
+
+
+
+<!-- Figures -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Results on Images Collected from Web</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="item">
+            <img src="static/images/web_results.png" alt="MY ALT TEXT"/>
+          </div>
+          <div class="item">
+            <img src="static/images/supp_web.png" alt="MY ALT TEXT"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Figures -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Comparions between Our Method and Two Baselines on FF+</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="item">
+            <img src="static/images/ffplus.png" alt="MY ALT TEXT"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Figures -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Comparions with SOTA methods on CelebA-HQ</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="item">
+            <img src="static/images/celebahq.png" alt="MY ALT TEXT"/>
+          </div>
+          <div class="item">
+            <img src="static/images/supp_celebahq.png" alt="MY ALT TEXT"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">More Evaluation</h2>
+      <div id="results" class="results" style="text-align: center;">
+        <div><div class="item" style="display: inline-block;">
+          <img style="width:500px; height:420px" src="static/images/Fig13_ours.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+           Two persons interaction.
+         </h2>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="item" style="display: inline-block;">
+          <img style="width:500px; height:420px" src="static/images/Fig11_ours.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Personalization for single person.
+          </h2>
+        </div>
+      </div>
+       <br>
+       <div><div class="item" style="display: inline-block;">
+        <img style="width:500px; height:420px" src="static/images/Fig12_ours.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Personalization for single person.
+       </h2>
+     </div>&nbsp;&nbsp;&nbsp;&nbsp;
+     <div class="item" style="display: inline-block;">
+      <img style="width:500px; height:420px" src="static/images/Fig14_ours.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Expression controlling.
+      </h2>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+
+<!-- Figures 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Comparing with FastComposer</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="static/images/Fig11.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Building Celeb Basis.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/Fig12.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Interpolation Ability of Celeb Embeddings.
+          </h2>
+        </div>
+        <div class="item">
+          <img src="static/images/Fig13.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Training and Testing Stage.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+
+
+
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Face Swapping</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/uqe4pD-XpGE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+<!-- Paper poster 
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        TBD
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/vinthony/project-page-template">modification version</a> of <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> from <a href="https://github.com/vinthony">vinthony</a>.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
